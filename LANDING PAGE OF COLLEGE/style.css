@@ -1,0 +1,625 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.header
+{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(/IMG/BANNER.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+/* Navabar */
+nav
+{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img
+{
+    width: 150px;
+}
+.nav-links
+{
+    flex:1;
+    text-align: right;
+}
+.nav-links ul li
+{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a
+{
+    text-decoration: none;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 23px;
+    text-transform: uppercase;
+}
+.nav-links ul li:after
+{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: #ff4400;
+    display: block;
+    margin: auto;
+    transition: 0.8s;
+}
+.nav-links ul li:hover::after
+{
+    width: 100%;
+}
+.logo
+{
+    height: 100px;
+    width: 90px;
+    margin-top: -20px;
+}
+
+.text-box
+{
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1
+{
+    font-size: 62px;
+
+}
+.text-box p
+{
+    margin: 10px 0px 40px;
+    font-size: 19px;
+    color: white;
+}
+.hero-btn
+{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 12px 34px;
+    font-size: 23px;
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn:hover
+{
+    border: 1px solid #ff4400;
+    background: #ff4400;
+    transition: 1s;
+}
+nav .fas
+{
+    display: none;
+}
+/* Navabar when in mobile screen */
+@media (max-width: 700px) {
+    .text-box h1
+    {
+        font-size: 40px;
+    }
+    .nav-links ul li
+    {
+        display: block;
+    }
+    .nav-links
+    {
+        position: fixed;
+        background: #ff4400;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fas
+    {
+        display: block;
+        color: white;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul
+    {
+        padding: 30px;
+    }
+    .hero-btn
+    {
+        font-size: 12px;
+        padding: 12px;
+    }
+    
+}
+
+.course
+{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+h1
+{
+    font-size: 36px;
+    font-weight: bold;
+}
+p
+{
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 22px;
+    padding: 10px
+}
+.row
+{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.course-col
+{
+    flex-basis: 31%;
+    background: #efefef;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    text-align: justify;
+    transition: .5s;
+}
+h3
+{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.course-col:hover
+{
+    box-shadow: 3px 8px 40px rgb(0, 0, 0);
+}
+@media (max-width:700px) {
+    .row
+    {
+        flex-direction: column;
+    }
+}
+
+.campus
+{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.campus-col
+{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.campus-col img
+{
+    width: 100%;
+    display: block;
+
+}
+.layer
+{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: .5s;
+}
+.layer:hover
+{
+    background: #4e4c4c59;
+}
+.layer h3
+{
+    width: 100%;
+    font-weight: 500;
+    color: white;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    transition: .5s;
+}
+.layer:hover h3
+{
+    bottom: 49%;
+    opacity: 1;
+
+}
+.facilities
+{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.facilities-col
+{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+
+}
+
+.facilities-col img
+
+{
+    height: 20vh;
+    width: 100%;
+    border-radius: 10px;
+}
+.facilities-col p
+{
+    padding: 0;
+
+}
+
+.facilities-col h3
+{
+    color: #ff4400;
+    font-weight: bold;
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.testimonials
+{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;  
+}
+.testimonial-col
+{
+    flex-basis: 44%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background: #ff4400;
+    padding: 25px;
+    cursor: pointer;
+    display: flex;
+}
+.testimonial-col img
+{
+    height: 70px;
+    width: 70px;
+    margin-left: -3px;
+    border-radius: 50px;
+}
+.testimonial-col img:hover
+{
+    box-shadow: 2px 2px 10px black,2px 2px 10px black;
+}
+.testimonial-col p
+{
+    color: rgb(0, 0, 0);
+    font-size: 17px;
+    font-weight: bold;
+    padding: 0;
+    margin-left: 5px;
+
+}
+.testimonial-col h3
+{
+    color: white;
+    margin-top: 15px;
+    text-align: left;
+}
+.testimonial-col .fas
+{
+    color: black;
+}
+@media (max-width:700px) {
+    .testimonial-col img
+    {
+        margin-left: 0px;
+        margin-right: 15px;
+    }
+}
+.cta
+{
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(/IMG/BANNER.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.cta h1
+{
+    color: white;
+    margin-bottom: 40px;
+    padding: 0;
+}
+@media (max-width:700px) {
+    .cta h1
+    {
+        font-size: 24px;
+    }
+    
+}
+
+.footer
+{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+
+}
+
+.footer h4
+{
+    font-size: 40px;
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+.icons img
+{
+    height: 40px;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 13px 0;
+}
+.icons img:hover
+{
+    
+    filter: drop-shadow(2px 2px 10px #000000);
+    -webkit-filter: drop-shadow(2px 2px 10px #000000);
+}
+
+.sub-header
+{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(/COLLEGESITE/IMG/BANNER.jpg);
+    /* background-image: linear-gradient(rgba(97, 97, 99, 0.7),rgba(3, 3, 3, 0.7),url(/COLLEGESITE/IMG/BANNER1.jpg)); */
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: white;
+}
+.sub-header h1
+{
+    margin-top: 100px;
+}
+.aboutus
+{
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+.aboutus-col
+{
+    flex-basis: 48%;
+    padding: 30px;
+}
+.aboutus-col img
+{
+    width: 100%;
+}
+.aboutus-col h1
+{
+    padding-top: 0;
+}
+.aboutus-col p
+{
+    padding: 15px 0 25px;
+}
+.aboutus-col a
+{
+    color: #000000;
+    border: 1px solid black;
+    font-weight: bold;
+    font-size: 20px;
+}
+.aboutus-col a:hover
+{
+    color: white;
+}
+
+.blog-content
+{
+    width: 80%;
+    margin: auto;
+    padding: 60px 0;
+
+}
+.blog-left
+{
+    flex-basis: 65%;
+}
+
+.blog-left img
+{
+    width: 70%;
+}
+.blog-left h2
+{
+    color: #222;
+    font: 600;
+    margin: 30px 0;
+}
+.blog-left p
+{
+    font-size: 20px;
+    color: #999;
+}
+.blog-right
+{
+    flex-basis: 32%;
+}
+.blog-right h3
+{
+    background: #ff4400;
+    color: white;
+    padding: 7px 0;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.blog-right div
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #666;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.comment-box
+
+{
+    border: 1px solid #ccc;
+    margin: 50px 0;
+    padding: 10px 20px;
+}
+
+.comment-box h3
+{
+    text-align: left;
+}
+.comment-form input, .comment-form textarea
+{
+width: 100%;
+padding: 10px;
+margin: 15px 0;
+box-sizing: border-box;
+border:none;
+outline: none;
+background: #bdbdbd;
+}
+.comment-form button
+{
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid black;
+    color: #000;
+    padding: 12px 34px;
+    font-size: 23px;
+    font-weight: bold;
+    position: relative;
+    cursor: pointer;
+}
+.comment-form button:hover
+{
+    border: 1px solid #ff4400;
+    color: white;
+
+}
+@media (max-width:700px)
+{
+    .sub-header h1{
+        font-size: 24px;
+    }
+}
+
+.location
+{
+    width: 80%;
+    margin: auto;
+    padding: 80px 0;
+}
+.location iframe
+{
+    width: 100%;
+}
+.contact-us
+{
+    width: 80%;
+    margin: auto;
+}
+.contact-col
+{
+    flex-basis: 48%;
+    margin-bottom: 30px;
+}
+.contact-col div
+{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.contact-col div .fas
+{
+    font-size: 28px;
+    color: #ff4400;
+    margin: 10px;
+    margin-right: 30px;
+}
+.contact-col div p
+{
+    padding: 0;
+}
+.contact-col div h5
+{
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: black;
+    font-weight: 400;
+}
+.contact-col input, .contact-col textarea
+{
+width: 100%;
+padding: 15px;
+margin-bottom: 17px;
+outline: none;
+border: 1px solid black;
+box-sizing: border-box;
+}
+.contact-col form .hero-btn
+{
+    border: 1px solid black;
+    color: #000;
+    background: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+.contact-col form .hero-btn:hover
+{
+    border: 1px solid #ff4400;
+    color: white;
+    background: #ff4400;
+    transition: 1s; 
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>About Us</title>
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img class="logo" src="/IMG/LOGO.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fas fa-window-close" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About</a></li>
+                    <li><a href="course.html">Course</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>About Us</h1>
+    </section>
+
+    <sec class="aboutus">
+        <div class="row">
+            <div class="aboutus-col">
+                <h1>We are the best</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, maiores quidem placeat error nobis debitis saepe. Saepe, beatae! Doloremque ullam, quisquam nam distinctio ipsa incidunt itaque dicta ex minus omnis quae veniam vero aliquam corporis?
+                </p>
+                <a href="" class="hero-btn">EXPLORE MORE</a>
+            </div>
+            <div class="aboutus-col">
+                <img src="/IMG/BANNER2.jpg" alt="">
+            </div>
+        </div>
+    </sec>
+
+    <section class="footer">
+        <h4>About us</h4>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur illum blanditiis fugiat suscipit non
+            laborum sed beatae distinctio consequatur quidem odio repellat quia aliquid laboriosam, consectetur,
+            veritatis adipisci nulla veniam voluptatibus voluptatum commodi deleniti dicta.
+        </p>
+        <div class="icons">
+            <img src="/IMG/facebook (1).png">
+            <img src="/IMG/instagram (1).png">
+            <img src="/IMG/linkedin.png">
+            <img src="/IMG/twitter (1).png">
+        </div>
+        <p>Made By <i class="fas fa-heart"></i> Dharmendra </p>
+    </section>
+
+    <script>
+        var navlinks = document.getElementById("navlinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>

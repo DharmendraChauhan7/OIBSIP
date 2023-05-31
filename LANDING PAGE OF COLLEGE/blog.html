@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Blog</title>
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img class="logo" src="/IMG/LOGO.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fas fa-window-close" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About</a></li>
+                    <li><a href="course.html">Course</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Blog</h1>
+    </section>
+
+    <section class="blog-content">
+        <div class="row">
+            <div class="blog-left">
+                <img src="/IMG/college.jpg" alt="">
+                <h2>Our Certificate & Online Programs for 2022</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam a impedit recusandae, dolores quas asperiores itaque perspiciatis nostrum eaque repudiandae atque saepe obcaecati cumque dolor molestiae hic debitis possimus! Saepe reprehenderit delectus voluptas amet veniam.</p><br>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam a impedit recusandae, dolores quas asperiores itaque perspiciatis nostrum eaque repudiandae atque saepe obcaecati cumque dolor molestiae hic debitis possimus! Saepe reprehenderit delectus voluptas amet veniam.</p><br>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam a impedit recusandae, dolores quas asperiores itaque perspiciatis nostrum eaque repudiandae atque saepe obcaecati cumque dolor molestiae hic debitis possimus! Saepe reprehenderit delectus voluptas amet veniam.</p><br>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam a impedit recusandae, dolores quas asperiores itaque perspiciatis nostrum eaque repudiandae atque saepe obcaecati cumque dolor molestiae hic debitis possimus! Saepe reprehenderit delectus voluptas amet veniam.</p><br>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam a impedit recusandae, dolores quas asperiores itaque perspiciatis nostrum eaque repudiandae atque saepe obcaecati cumque dolor molestiae hic debitis possimus! Saepe reprehenderit delectus voluptas amet veniam.</p><br>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam a impedit recusandae, dolores quas asperiores itaque perspiciatis nostrum eaque repudiandae atque saepe obcaecati cumque dolor molestiae hic debitis possimus! Saepe reprehenderit delectus voluptas amet veniam.</p><br>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam a impedit recusandae, dolores quas asperiores itaque perspiciatis nostrum eaque repudiandae atque saepe obcaecati cumque dolor molestiae hic debitis possimus! Saepe reprehenderit delectus voluptas amet veniam.</p><br>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam a impedit recusandae, dolores quas asperiores itaque perspiciatis nostrum eaque repudiandae atque saepe obcaecati cumque dolor molestiae hic debitis possimus! Saepe reprehenderit delectus voluptas amet veniam.</p><br>
+                
+                <div class="comment-box">
+                    <h3>Leave Comment</h3>
+                    <form action="" class="comment-form">
+                        <input type="text" placeholder="Enter Name">
+                        <input type="text" placeholder="Enter E-mail">
+                        <textarea  rows="5" placeholder="Your Comment"></textarea>
+                        <button type="submit" class="hero-btn red-btn">Post Comment</button>
+                    </form>
+                </div>
+            </div>
+            <div class="blog-right">
+
+                <h3>Post Categories</h3>
+                <div>
+                    <span>Business Analytics</span>
+                    <span>21</span>
+                </div>
+                <div>
+                    <span>Information Technology</span>
+                    <span>26</span>
+                </div>
+                <div>
+                    <span>Computer Science</span>
+                    <span>41</span>
+                </div>
+                <div>
+                    <span>Civil Eng.</span>
+                    <span>71</span>
+                </div>
+                <div>
+                    <span>Mec. Eng.</span>
+                    <span>11</span>
+                </div>
+                <div>
+                    <span>BBA</span>
+                    <span>31</span>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <section class="footer">
+        <h4>About us</h4>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur illum blanditiis fugiat suscipit non
+            laborum sed beatae distinctio consequatur quidem odio repellat quia aliquid laboriosam, consectetur,
+            veritatis adipisci nulla veniam voluptatibus voluptatum commodi deleniti dicta.
+        </p>
+        <div class="icons">
+            <img src="/IMG/facebook (1).png">
+            <img src="/IMG/instagram (1).png">
+            <img src="/IMG/linkedin.png">
+            <img src="/IMG/twitter (1).png">
+        </div>
+        <p>Made By <i class="fas fa-heart"></i> Dharmendra </p>
+    </section>
+
+    <script>
+        var navlinks = document.getElementById("navlinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>
